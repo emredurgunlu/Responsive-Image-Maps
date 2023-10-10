@@ -1,0 +1,25 @@
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.textPart {
+  width: 20%;
+}
+p {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 1630px) {
+  .textPart {
+    width: 70%;
+    text-align: center;
+  }
+  img {
+    width: 98%;
+    margin: auto;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}

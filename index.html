@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <img src="./burger.jpg" alt="Workplace" usemap="#workmap" />
+
+      <map name="workmap">
+        <area
+          shape="rect"
+          coords="208,382,470,740"
+          alt="Salad"
+          onclick="saladFunction()"
+        />
+        <area
+          shape="rect"
+          coords="480,383,702,752"
+          alt="Potato"
+          onclick="potatoFunction()"
+        />
+        <area
+          shape="rect"
+          coords="506,6,775,380"
+          alt="Potato"
+          onclick="potatoFunction()"
+        />
+        <area
+          shape="circle"
+          coords="413,230,90"
+          alt="hotSouce"
+          onclick="hotSouceFunction()"
+        />
+        <area
+          shape="circle"
+          coords="877,239,85"
+          alt="freshSouce"
+          onclick="freshSouceFunction()"
+        />
+        <area
+          shape="circle"
+          coords="901,552,188"
+          alt="Coffee"
+          onclick="burgerFunction()"
+        />
+      </map>
+      <div class="textPart">
+        <h1 id="header"></h1>
+        <p id="ingredientsTR">Yemeklerden birine tıklayınız</p>
+        <p id="ingredientsENG">Click on a part of the Burger Menu</p>
+      </div>
+    </main>
+
+    <script src="myScript.js"></script>
+    <!-- Search on google "img map area responsive" -->
+    <!-- https://stackoverflow.com/questions/7844399/responsive-image-map -->
+    <!-- https://github.com/davidjbradshaw/image-map-resizer -->
+    <script src="imageMapResizer.min.js"></script>
+    <script>
+      imageMapResize();
+    </script>
+  </body>
+</html>
